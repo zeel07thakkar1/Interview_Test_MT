@@ -1,0 +1,318 @@
+@font-face
+{
+	font-family: 'Open_Sans_extrabold'; 
+	src: url('../font/opensans_extrabold.ttf');
+}
+@font-face
+{
+	font-family: 'Open_Sans_regular'; 
+	src: url('../font/opensans_regular.ttf');
+}
+@font-face
+{
+	font-family: 'Open_Sans_bold'; 
+	src: url('../font/opensans_bold.ttf');
+}
+@font-face
+{
+	font-family: 'Open_Sans_light'; 
+	src: url('../font/opensans_light.ttf');
+}
+@font-face
+{
+	font-family: 'Open_Sans_semibold'; 
+	src: url('../font/opensans_semibold.ttf');
+}
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+
+:root
+{
+	--navy_clr:#1b1f3a;
+	--green_clr: #2ad694;
+	--grey_clr: #6c708b;
+
+}
+body
+{
+	box-sizing: border-box;
+	position: relative;
+	height: auto;
+	/* overflow-x: hidden; */
+	background-color: var(--navy_clr) !important;
+}
+
+.navy_clr
+{
+	color: #1b1f3a;
+}
+.green_clr
+{
+	color: #2ad694;
+}
+
+/* ----Designer Scrollbar--------- */
+body::-webkit-scrollbar
+{
+  width: 12px;
+}
+body::-webkit-scrollbar-track
+{
+  background-color: #1b1f3a ;
+}
+body::-webkit-scrollbar-thumb
+{
+  background-color: #2ad694;
+  /* border-radius: 5px; */
+  cursor: pointer;
+ }
+
+
+/* ----index page css-----*/
+ .logo
+ {
+ 	font-family: 'Open_Sans_bold';  
+ }
+
+.btn_gray
+{
+	border: 1px solid white !important;
+	color: white !important;
+	background-color: #383a4f !important;
+}
+.btn_gray:hover
+{
+	border: 1px solid skyblue !important;
+	
+}
+.btn_green
+{
+	border: 1px solid var(--green_clr) !important;
+	color: var(--green_clr) !important;
+	background-color: #1a374c !important;
+}
+.btn_green:hover
+{
+	border: 1px solid var(--green_clr) !important;
+	color: black !important;
+	background-color: var(--green_clr) !important;
+}
+
+.main_heading
+{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	font-size: xxx-large;
+}
+.features
+{
+	background-color: #1f233e;
+	padding: 15px 0px;
+	box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: 0.5s all;
+}
+.features:hover
+{
+	transform: translateY(-15px);
+	transition: 0.5s transform ease-in;
+}
+.sub_heading
+{
+	font-family: 'Roboto Slab', serif;
+	font-size:large;
+}
+.plan_price
+{
+	background-color: var(--green_clr);
+	box-shadow: 0px 0px 8px 3px #25685a;
+	padding: 10px 0px !important;
+}
+.footer
+{
+	background-color: #16182d;
+	padding: 15px 0px;
+}
+
+/* ----Sign in Modal--- */
+.modal-content
+{
+	background-color: #242945 !important;
+	padding: 10px 40px;
+}
+.modal-header
+{
+	border-bottom: none !important;
+}
+.modal_heading
+{
+	color: white !important;
+	text-align: center !important;
+	font-family: 'Open_Sans_bold';
+	padding-left: 85px;
+}
+.input_blue
+{
+	background-color: #1a1c32 !important;
+	color: white !important;
+}
+.input_blue:focus
+{
+	box-shadow: none !important;
+}
+a:hover
+{
+	color: white !important;
+}
+
+
+
+
+.nav-tabs
+{
+	border-bottom: none !important;
+}
+.nav-item
+{
+	border-top: 2px solid #4b4f53;
+}
+.nav-item:nth-child(1)
+{
+	border-top: 2px solid var(--green_clr);
+}
+
+.radio
+{
+	height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    
+}
+
+.radio_active
+{
+	/* height: 15px;
+    width: 15px; */
+    background-color: #2ad694 !important;
+    border: 1px solid #2ad694 !important;
+    /* border-radius: 50%;
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+    top: 5px; */
+}
+.navy_div
+{
+	background-color: #242945 !important;
+	padding: 20px 50px !important;
+}
+.hide_password
+{
+	display: none;
+	cursor: pointer;
+}
+.show_password
+{
+	cursor: pointer;
+}
+
+.payment_method_row
+{
+	background-color: #252843;
+}
+.method_checked_card,
+.method_checked_crypto
+{
+	width: 100%;
+	color: var(--green_clr);
+	float: left;
+	visibility: hidden;
+}
+.pay_m_card,
+.pay_m_crypto
+{
+	cursor: pointer;
+	background-color: #2f3656;
+	padding: 20px 30px;
+}
+.payment_method_active
+{
+	background-color: #1c1f38;
+    box-shadow: 0px 0px 2px 1px #2ad694;
+}
+.amount p
+{
+	line-height: 5px;
+}
+.QR_code_div img
+{
+	height: 150px;
+	width: 150px;
+}
+
+/*-----other containers are hide------*/
+#creditcard_container,
+#crypto_container,
+#acc_container,
+#pay_container
+{
+	display: none;
+}
+
+
+
+
+@media screen and (max-width: 768px)
+{
+	.main_heading
+	{
+		font-size:xx-large;
+	}
+}
+
+@media screen and (max-width: 576px)
+{
+	.logo
+	{
+		text-align: center;
+	}
+	.buttons
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.modal_heading
+	{
+		
+		padding-left: 10px;
+	}
+	.pay_method_title
+	{
+		font-size: 2vw;
+	}
+	.pay_m_card,
+	.pay_m_crypto
+	{
+		padding: 5px 5px;
+	}
+	.pay_m_card i,
+	.pay_m_crypto i
+	{
+		font-size: 8vw;
+	}
+}

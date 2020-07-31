@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 57.1 (101010) - https://sketch.com -->
+    <title>A56A9CD0-10CE-4037-BF85-956F6EC2EF1A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M52.7208,237.9994 C69.6608,237.9994 83.4408,251.7814 83.4408,268.7214 C83.4408,277.781137 79.5775774,286.154155 72.7710318,292.000656 L82.7208,291.9994 L82.7208,293.4414 L70.7208,293.4414 C70.3228,293.4414 70.0008,293.1194 70.0008,292.7214 L70.0008,280.7214 L71.4408,280.7214 L71.441118,291.239078 C78.170924,285.654908 82.0008,277.527351 82.0008,268.7214 C82.0008,252.5754 68.8648,239.4414 52.7208,239.4414 C36.5768,239.4414 23.4408,252.5754 23.4408,268.7214 C23.4408,284.8654 36.5768,297.9994 52.7208,297.9994 L52.7208,299.4414 C35.7808,299.4414 22.0008,285.6594 22.0008,268.7214 C22.0008,251.7814 35.7808,237.9994 52.7208,237.9994 Z M53.4406,246.7198 L53.4406,269.1358 L39.2246,277.3438 L38.5066,276.0978 L52.0006,268.3038 L52.0006,246.7198 L53.4406,246.7198 Z" id="path-1"></path>
+        <filter x="-24.4%" y="-24.4%" width="148.8%" height="148.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.839215686   0 0 0 0 0.560784314  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-12.000000, -228.000000)" id="time">
+            <g>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#00E096" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
