@@ -23,13 +23,13 @@ jQuery(document).ready(function($) {
       $('.input_pass').css('border', '1px solid #ab0f0f');
     }
 
-});
+  });
 
   
 
 
 
-   $('.show_password').click(function(event) {
+  $('.show_password').click(function(event) {
     var pass = $('.input_pass');
 
     if((pass).attr('type', 'password'))
@@ -77,14 +77,12 @@ jQuery(document).ready(function($) {
      
      if($('.pay_m_card').hasClass('payment_method_active'))
      {
-      
         $('#pay_container').hide();
         $('#creditcard_container').fadeIn('slow');
      }
 
       if($('.pay_m_crypto').hasClass('payment_method_active'))
      {
-     
         $('#pay_container').hide();
         $('#crypto_container').fadeIn('slow');
      }
@@ -92,15 +90,12 @@ jQuery(document).ready(function($) {
    });
 
 
-// screen3-------------------------------
-
 $('.select_plan_btn').click(function(event) {
   
   $('#plan_container').hide();
   $('#acc_container').fadeIn('slow');
   $('.acc_item , .plan_item').css('border-top', '2px solid #2ad694');
   $(this).parentsUntil('html').find('.nav-item .radio').eq(1).addClass('radio_active');
-  // $('.radio').not(active_radio_btn).removeClass('radio_active');
 });
 
 
@@ -108,43 +103,40 @@ $('.cont_btn_acc_cont').click(function(event) {
     
     var email = $('.input_email').val();
     var pass = $('.input_pass').val();
-
-    
     if(email != "" && pass !="")
     {
       $('#acc_container').hide();
       $('#pay_container').fadeIn('slow');
       $('.pay_item').css('border-top', '2px solid #2ad694');
       $(this).parentsUntil('html').find('.nav-item .radio').eq(2).addClass('radio_active');
-      // $('.radio').not(active_radio_btn).removeClass('radio_active');
+      
     }
     
 });
 
 
-$('.plan_item').click(function(event) {
-  $('#plan_container').fadeIn();
-  $('#acc_container').hide();
-  $('#pay_container').hide();
-});
+  $('.plan_item').click(function(event) {
+    $('#plan_container').fadeIn();
+    $('#acc_container').hide();
+    $('#pay_container').hide();
+  });
 
-$('.acc_item').click(function(event) {
-  $('#plan_container').hide();
-  $('#acc_container').fadeIn();
-  $('#pay_container').hide();
-});
+  $('.acc_item').click(function(event) {
+    $('#plan_container').hide();
+    $('#acc_container').fadeIn();
+    $('#pay_container').hide();
+  });
 
-$('.pay_item').click(function(event) {
-  $('#plan_container').hide();
-  $('#acc_container').hide();
-  $('#pay_container').fadeIn();
-});
+  $('.pay_item').click(function(event) {
+    $('#plan_container').hide();
+    $('#acc_container').hide();
+    $('#pay_container').fadeIn();
+  });
 
 
 
 $('.process_link').eq(0).click(function(event) 
 {
-
       $(this).siblings('.radio').addClass('radio_active');
       $(this).parents('.nav').find('.nav-item .radio').eq(1).removeClass('radio_active');
       $(this).parents('.nav').find('.nav-item .radio').eq(2).removeClass('radio_active');
@@ -158,7 +150,6 @@ $('.process_link').eq(0).click(function(event)
 
 $('.process_link').eq(1).click(function(event) 
 {
-
      $(this).parents('.nav').find('.nav-item .radio').eq(0).addClass('radio_active');
      $(this).siblings('.radio').addClass('radio_active');
      $(this).parents('.nav').find('.nav-item .radio').eq(2).removeClass('radio_active');
@@ -182,16 +173,16 @@ $('.process_link').eq(2).click(function(event)
 
  
   
-$('.back_link').click(function(event) {
-    
+$('.back_link').click(function(event) 
+{
     $('#creditcard_container,#crypto_container').hide();
     $('#pay_container').fadeIn('slow');
   
 });
 
-function display_prc (price) {
-  
-  var p=price;
+function display_prc (price) 
+{
+   var p=price;
   var prc1=$('#creditcard_container').find('.navy_div .selected_plan_prc');
   var prc2=$('#creditcard_container').find('.pay_btn .selected_plan_prc');
   var prc3=$('#crypto_container').find('.navy_div .selected_plan_prc');
@@ -200,26 +191,15 @@ function display_prc (price) {
   prc3.text(p);
 
 }
-$('.plan_btn_129').click(function(event) {
-  
-  display_prc(129);
+
+  $('.plan_btn_129').click(function(event) 
+  {
+     display_prc(129);
+  });
+
+  $('.plan_btn_249').click(function(event) 
+  {
+    display_prc(249);
+  });
 
 });
-
-$('.plan_btn_249').click(function(event) {
-  
-  display_prc(249);
-
-});
-
-
-
-
-});
-
-
- 
-
-
-
-

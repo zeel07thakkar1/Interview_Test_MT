@@ -175,7 +175,7 @@ a:hover
 
 
 
-
+/* ----process file css---- */
 .nav-tabs
 {
 	border-bottom: none !important;
@@ -205,15 +205,9 @@ a:hover
 
 .radio_active
 {
-	/* height: 15px;
-    width: 15px; */
     background-color: #2ad694 !important;
     border: 1px solid #2ad694 !important;
-    /* border-radius: 50%;
-    margin: 5px;
-    position: relative;
-    display: inline-block;
-    top: 5px; */
+  
 }
 .navy_div
 {
