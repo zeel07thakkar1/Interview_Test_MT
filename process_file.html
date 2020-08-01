@@ -29,17 +29,17 @@
 				<ul class="nav nav-tabs nav-justified">
 					<li class="nav-item pt-2 plan_item">
 							<span class="radio radio_active"></span>
-							<a href="#plan_tab" class="text-decoration-none text-white process_link">Plan</a>
+							<a href="javascript:onTabNavigation('plan')" class="text-decoration-none text-white process_link">Plan</a>
 						
 					</li>
 					<li class="nav-item pt-2 acc_item">
 							<span class="radio"></span>
-							<a href="#acc_tab" class="text-decoration-none text-white process_link">Account</a>
+							<a href="javascript:onTabNavigation('account')" class="text-decoration-none text-white process_link">Account</a>
 						
 					</li>
 					<li class="nav-item pt-2 pay_item">
 							<span class="radio"></span>
-							<a href="#pay_tab" class="text-decoration-none text-white process_link">Payment</a>
+							<a href="javascript:onTabNavigation('payment')" class="text-decoration-none text-white process_link">Payment</a>
 						
 					</li>
 					
@@ -63,7 +63,7 @@
 						<div class="card-body plan_price">
 							<p class="text-dark"><sup>$</sup> <span class="font-weight-bold">129</span> <sub> / year</sub></p>
 						</div>
-						<a class="btn btn_green font-weight-bold mt-4 select_plan_btn plan_btn_129">SELECT PLAN</a>
+						<a href="javascript:display_prc(129)" class="btn btn_green font-weight-bold mt-4 select_plan_btn">SELECT PLAN</a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12 col-12 order-3 order-md-2">
@@ -88,7 +88,7 @@
 						<div class="card-body plan_price">
 							<p class="text-dark"><sup>$</sup> <span class="font-weight-bold">249</span></p>
 						</div>
-						<a class="btn btn_green font-weight-bold mt-4 select_plan_btn plan_btn_249">SELECT PLAN</a>
+						<a href="javascript:display_prc(249)" class="btn btn_green font-weight-bold mt-4 select_plan_btn">SELECT PLAN</a>
 					</div>
 				</div>
 		</div>
